@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './css/componets/Login';
 import Tecnico from './css/componets/tecnico/Tecnico';
+import Equipos from './css/componets/tecnico/Equipos';
 //importar las rutas del hedert
 
 class App extends React.Component {
@@ -35,6 +36,8 @@ class App extends React.Component {
           <Routes>
             <Route path='/' element={<Login notificacion={this.notificacion} />} />
             <Route path='/tecnico' element={<Tecnico notificacion={this.notificacion} />} />
+            <Route path='/equipo' element={<Equipos notificacion={this.notificacion} />} />
+
             
           </Routes>
         </Router>
